@@ -50,3 +50,7 @@ body {
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 1rem 1rem 3rem #bebebe, -1rem -1rem 3rem #ffffff;
 }
+
+svg {
+  padding-top: 0.1rem;
+}
