@@ -1,42 +1,51 @@
-#root {
-  max-width: 1280px;
+@font-face {
+  font-family: "GmarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "GmarketSans";
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e0e0e0;
+  max-width: 444px;
   margin: 0 auto;
-  padding: 2rem;
+}
+.button {
+  min-width: 5rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  text-align: center;
+  border-radius: 2rem;
+  color: #222;
+  background: #e0e0e0;
+  box-shadow: 1rem 1rem 3rem #bebebe, -1rem -1rem 3rem #ffffff;
+}
+.button div {
+  width: 100%;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.button:hover {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 1rem 1rem 3rem #bebebe, -1rem -1rem 3rem #ffffff;
 }
