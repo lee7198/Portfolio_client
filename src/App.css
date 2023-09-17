@@ -1,27 +1,27 @@
 @font-face {
-  font-family: "GmarketSans";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
-    format("woff");
+  font-family: "NanumSquareNeo";
+  src: url("../public/font/NanumSquareNeoTTF-aLt.woff") format("woff");
   font-weight: 100;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
-  font-family: "GmarketSans";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: 400;
+  font-family: "NanumSquareNeo";
+  src: url("../public/font/NanumSquareNeoTTF-cBd.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
-  font-family: "GmarketSans";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
-    format("woff");
-  font-weight: 700;
+  font-family: "NanumSquareNeo";
+  src: url("../public/font/NanumSquareNeoTTF-eHv.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
+  font-display: block;
 }
 
 * {
-  font-family: "GmarketSans";
+  font-family: "NanumSquareNeo";
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -53,4 +53,47 @@ body {
 
 svg {
   padding-top: 0.1rem;
+}
+
+.forU.button {
+  justify-content: center;
+}
+
+.forU {
+  margin-top: 3rem;
+  height: 3.5rem;
+  border-radius: 99px;
+  outline: none;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+}
+.forU:hover {
+  background-color: #444;
+}
+
+.disalbed.forU {
+  background-color: #444 !important;
+}
+
+.loader {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
