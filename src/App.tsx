@@ -7,6 +7,7 @@ import {
   GithubLogo,
   Icon,
   Laptop,
+  ThumbsUp,
   Trash,
 } from '@phosphor-icons/react';
 import JSConfetti from 'js-confetti';
@@ -41,6 +42,11 @@ const projectLinks: ILink[] = [
     title: 'Vehicle Detection Model (Web)',
     icon: Car,
     link: 'https://www.jigume.site',
+  },
+  {
+    title: 'THIS',
+    icon: ThumbsUp,
+    link: 'https://github.com/lee7198/Portfolio_client',
   },
 ];
 
