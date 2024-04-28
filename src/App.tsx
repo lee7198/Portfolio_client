@@ -42,7 +42,7 @@ const projectLinks: ILink[] = [
   {
     title: 'Vehicle Detection Model (Web)',
     icon: Car,
-    link: 'https://www.jigume.site',
+    link: 'https://industry-client.vercel.app',
   },
   {
     title: 'THIS',
