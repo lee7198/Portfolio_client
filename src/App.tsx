@@ -5,12 +5,44 @@ import {
   Clover,
   Flag,
   GithubLogo,
+  Icon,
   Laptop,
   Trash,
 } from '@phosphor-icons/react';
 import JSConfetti from 'js-confetti';
 import Button from './components/Button';
 import useWindowSize from './hooks/useWindowResize';
+
+interface ILink {
+  title: string;
+  icon: Icon;
+  link: string;
+}
+
+const links: ILink[] = [
+  { title: 'github', icon: GithubLogo, link: 'https://github.com/lee7198' },
+  { title: 'velog', icon: Laptop, link: 'https://velog.io/@lee7198' },
+  { title: 'naver blog', icon: Trash, link: 'https://blog.naver.com/lee7198' },
+];
+
+const projectLinks: ILink[] = [
+  {
+    title: '우연한발견',
+    icon: Clover,
+    link: 'https://github.com/wooyeonhan-inyeons',
+  },
+  {
+    title: 'AWS DeepRacer',
+    icon: Flag,
+    link: 'https://github.com/lee7198/AWS_DeepRacer',
+  },
+  { title: 'JIGUME', icon: Cloud, link: 'https://www.jigume.site' },
+  {
+    title: 'Vehicle Detection Model (Web)',
+    icon: Car,
+    link: 'https://www.jigume.site',
+  },
+];
 
 function App() {
   const [wait, setWait] = useState(true);
@@ -47,44 +79,18 @@ function App() {
         <div className="flex flex-col gap-4">
           <h3 className="relative w-full text-center">Links</h3>
           <div className="flex flex-row flex-wrap gap-2">
-            <Button
-              title="github"
-              Img={GithubLogo}
-              link="https://github.com/lee7198"
-            />
-            <Button
-              title="velog"
-              Img={Laptop}
-              link="https://velog.io/@lee7198"
-            />
-            <Button
-              title="naver blog"
-              Img={Trash}
-              link="https://blog.naver.com/lee7198"
-            />
+            {links.map(({ title, link, icon }) => (
+              <Button key={title} title={title} Img={icon} link={link} />
+            ))}
           </div>
         </div>
 
         <div className="flex flex-col gap-4">
           <h3 className="relative w-full text-center">Projects</h3>
           <div className="flex flex-row flex-wrap gap-2">
-            <Button
-              title="우연한발견"
-              Img={Clover}
-              link="https://github.com/wooyeonhan-inyeons"
-            />
-            <Button
-              title="AWS DeepRacer"
-              Img={Flag}
-              link="https://github.com/lee7198/AWS_DeepRacer"
-            />
-            <Button title="JIGUME" Img={Cloud} link="https://www.jigume.site" />
-
-            <Button
-              title="Vehicle Detection Model (Web)"
-              Img={Car}
-              link="https://www.jigume.site"
-            />
+            {projectLinks.map(({ title, link, icon }) => (
+              <Button key={title} title={title} Img={icon} link={link} />
+            ))}
           </div>
         </div>
 
