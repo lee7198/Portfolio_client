@@ -108,16 +108,6 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
-
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-
-  -webkit-user-drag:none;
-  -moz-user-drag:none;
-  -ms-user-drag:none;
-  user-drag:none;
 }
 
 /*
