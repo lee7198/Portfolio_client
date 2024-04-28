@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {
   Car,
+  Cat,
   Cloud,
   Clover,
   Flag,
@@ -47,6 +48,11 @@ const projectLinks: ILink[] = [
     title: 'THIS',
     icon: ThumbsUp,
     link: 'https://github.com/lee7198/Portfolio_client',
+  },
+  {
+    title: '아띠클라이밍',
+    icon: Cat,
+    link: 'https://www.ahttyclimbing.com',
   },
 ];
 
