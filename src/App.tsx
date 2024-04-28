@@ -53,9 +53,9 @@ const projectLinks: ILink[] = [
 function App() {
   const [wait, setWait] = useState(true);
   const windowSize = useWindowSize();
-  const jsConfetti = new JSConfetti();
 
   const handleConfetti = async () => {
+    const jsConfetti = new JSConfetti();
     setWait(false);
     const x = windowSize.width > 580 ? (windowSize.width > 1080 ? 30 : 25) : 5;
     await jsConfetti
@@ -64,7 +64,13 @@ function App() {
         emojiSize: windowSize.width / x,
         confettiNumber: 60,
       })
-      .then(() => setWait(true));
+      .then(() => {
+        setWait(true);
+
+        // clear element
+        const element = document.getElementsByTagName('canvas');
+        if (element[1]) element[1].remove();
+      });
   };
 
   return (
@@ -74,8 +80,9 @@ function App() {
       </div>
       <div className="w-full text-left font-thin">
         <p className="w-full overflow-hidden break-keep">
-          컴퓨터공학과 졸업했고 개발 공부하긴 했지만, 직업은 개발자가
-          아니랍니다. 그래도 관심 가지고 있어요..
+          컴퓨터공학과 졸업했고 개발 공부하긴 했지만, 직업은{' '}
+          <b className="font-bold">*개발자가 아니랍니다.</b> 그래도 관심 가지고
+          있어요..
           <br />
           감사합니다.
         </p>
