@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {
   Car,
+  CarProfile,
   Cat,
   Cloud,
   Clover,
@@ -53,6 +54,11 @@ const projectLinks: ILink[] = [
     title: '아띠클라이밍',
     icon: Cat,
     link: 'https://www.ahttyclimbing.com',
+  },
+  {
+    title: '자율주행(ROS2)',
+    icon: CarProfile,
+    link: 'https://github.com/lee7198/ROS',
   },
 ];
 
