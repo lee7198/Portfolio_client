@@ -86,17 +86,16 @@ function App() {
   };
 
   return (
-    <div className="font-NanumNeo max-w-screen-xs mx-auto flex w-full select-none flex-col items-center gap-4 px-4 py-24 outline-0">
+    <div className="mx-auto flex w-full max-w-screen-xs select-none flex-col items-center gap-4 px-4 py-24 font-NanumNeo outline-0">
       <div className="flex flex-row gap-4">
         <h1 className="text-3xl font-black">안녕하세요!</h1>
       </div>
       <div className="w-full text-left font-thin">
         <p className="w-full overflow-hidden break-keep">
-          컴퓨터공학과 졸업했고 개발 공부하긴 했지만, 직업은{' '}
-          <b className="font-bold">*개발자가 아니랍니다.</b> 그래도 관심 가지고
-          있어요..
-          <br />
-          감사합니다.
+          개발 안함. <b className="font-bold">Lorem ipsum</b> dolor sit amet,
+          consectetur adipisicing elit. Dicta, sunt rerum veniam culpa eum,
+          eaque tempora est libero quae quaerat eius ducimus illum beatae
+          temporibus voluptas unde distinctio quisquam ad?
         </p>
       </div>
 

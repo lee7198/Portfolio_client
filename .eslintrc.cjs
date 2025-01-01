@@ -5,8 +5,8 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   extends: [
-    'airbnb',
-    'airbnb-typescript',
+    // 'airbnb',
+    // 'airbnb-typescript',
     'eslint:recommended',
     'plugin:tailwindcss/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -20,9 +20,7 @@ module.exports = {
   },
   ignorePatterns: [],
   plugins: ['prettier', '@typescript-eslint', 'import'],
-  rules: {
-    
-  },
+  rules: {},
   settings: {
     'import/resolver': {
       node: {
